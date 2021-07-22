@@ -28,6 +28,10 @@
                 padding-bottom: 2px;
                 border-bottom: 1px solid white;
             }
+            .message-1,
+            .message-2 {
+                display: inline-block;
+            }
             h1,h2 {
                 color: white;
                 font-weight: 200;
@@ -106,6 +110,19 @@
                 }
             }
 
+            @media only screen and (max-width: 700px) {
+                .message-1,
+                .message-2 {
+                    display: block;
+                    padding: 5px 0;
+                }
+                .banner-message {
+                    height: auto;
+                    line-height: normal;
+                    padding: 10px 0;
+                }
+            }
+
             @media only screen and (max-width: 525px) {
                 h1 {
                     font-size: 35px;
@@ -131,7 +148,8 @@
         <div id="particles-js"></div>
             <div class="page-content">
                 <div class="banner-message">
-                    WEBSITE UNDER CONSTRUCTION. VISIT BACK SHORTLY.
+                    <p class="message-1">WEBSITE UNDER CONSTRUCTION.</p>
+                    <p class="message-2">VISIT BACK SHORTLY.</p>
                 </div>
                 <img class="profile-img" src="/images/profilePic.jpeg" alt="">
                     <br />
